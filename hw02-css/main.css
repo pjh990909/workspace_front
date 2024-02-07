@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    font-family: 맑은고딕;
+    font-size: 17px;
+}
+
+h2{font-size: 25px;}
+
+h3{font-size: 20px;}
+
+.Internet{
+    font-family: 궁서체;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+
+.It{
+    font-weight: bold;
+    font-style: italic;
+    color: #0000ff;
+}
+
+.js{
+    font-weight: bold;
+    font-style: italic;
+    color: #ff0000;
+}
+
+div{background-color: #d9d9d9;}
+
+.ih{
+    text-decoration: underline;
+    color: #00ff00;
+}
+.mi{
+    font-weight: bold;
+    color: #ff0000;
+}
