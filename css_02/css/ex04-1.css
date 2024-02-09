@@ -13,6 +13,14 @@ table>thead>tr{
 table>thead>tr>th, table>tbody>tr>td{
     border: 1px solid #000000;
     text-align: center;
+    border-left: hidden;
+    border-right: hidden;
+}
+
+table>tbody>tr>td{
+    border: 1px dotted #000000;
+    border-left: hidden;
+    border-right: hidden;    
 }
 
 table>thead>tr>th{
@@ -24,4 +32,8 @@ table>tbody>tr:hover{
 }
 
 
-.txt-left{text-align: left;}
+.txt{
+    color: #0000ff;
+    text-decoration: underline;
+    text-decoration-color: #0000ff;
+}
