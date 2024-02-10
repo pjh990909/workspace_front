@@ -33,7 +33,69 @@ div{background-color: #d9d9d9;}
     text-decoration: underline;
     color: #00ff00;
 }
+
 .mi{
     font-weight: bold;
     color: #ff0000;
+}
+
+.hs>p{
+    text-indent: 30px;
+}
+
+.ituser{
+    text-decoration: underline;
+}
+
+.sl{
+    font-weight: bold;
+    color: #00ff00;
+}
+
+.hd{
+    font-style: italic;
+    color: #0000ff;
+}
+
+ul>li{
+    list-style: square;
+}
+
+ol>li{
+    list-style: none;
+}
+
+table>tbody>tr:hover{
+    background-color: #edd3ed;
+}
+
+thead{
+    background-color: #c8ebfa;
+}
+
+tbody td:nth-child(2){
+    text-align: right;
+}
+
+tbody td:nth-child(2)::before{
+    content: "약";
+}
+
+tbody td:nth-child(2)::after{
+    content: "(MB/초)";
+}
+
+tbody td:nth-child(1) a{
+    color: #000000;
+    text-decoration: none;
+}
+
+tbody td:nth-child(1) a:hover{
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+tbody td:nth-child(1) a:active{
+    color: #0000ff;
+    text-decoration: underline;
 }
