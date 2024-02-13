@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, input, 
+fieldset, legend, p, select, table, 
+th, td, tr, textarea, button, form{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+ ol>li{
+   list-style-type: none;
+   float: left;
+   margin-right: 10px;
+ }
+
+body{
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+}
+
+.content{
+    width: 700px;
+    background-color: #ffffff;
+}
+
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ol>li::after{
+    content: ">";
+}
+
+ol>li:last-child::after{
+    content: "";
+}
+
+.content .form-group{
+    margin-bottom: 10px;
+}
+
+.content .form-group .form-text{
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+.content .form-group #sel-board{
+    width: 200px;
+}
+
+.content .form-group #txt-title{
+    width: 600px;
+}
+
+.content .form-group #txt-pw{
+    width: 196px;
+}
+
+.content .form-group input[type="radio"]{
+    margin-right: 10px;
+}
+
+.content .form-group input[type="checkbox"]{
+    margin-right: 10px;
+}
+
+.content .form-group #txt-content{
+    width: 686px;
+    height: 80px;
+}
+
+.content .btn-area{
+    padding: 20px 0px 20px 0px;
+    border-top: 1px solid #000000;
+    text-align: center;
+}
+
+.content .btn-area button{
+    width: 60px;
+    height: 30px;
+}
+
