@@ -13,3 +13,34 @@ body{
     font-family: "맑은 고딕";
     font-size: 12px;
 }
+
+.remain{
+    width: 600px;
+    background-color: #ffffff;
+}
+
+.remain h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.remain .form-group{
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.remain .form-title{
+    display: inline-block;
+    width: 120px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.remain .form-group input[type="radio"]{
+    margin-right: 10px;
+}
+
+.remain .form-group input[type="checkbox"]{
+    margin-right: 10px;
+}
