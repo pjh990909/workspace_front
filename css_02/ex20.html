@@ -10,116 +10,133 @@
 
     <body>
         <div class="remain">
-            <h3>회원가입</h3>
+            <h3 class="new">회원가입</h3>
+
+            <ol class="clearfix">
+                <li>홈</li>
+                <li>유저</li>
+                <li>회원가입</li>
+            </ol>
+
+            <div class="form-group clearfix">
             
-            <div class="form-group">
-                <label class="form-title" for="txt-id">아이디</label>
-                <input id="txt-id" type="text">            
-            </div>
+                <div class="form-group">
+                    <label class="form-title" for="txt-id">아이디</label>
+                    <input id="txt-id" placeholder="아이디를 입력하세요" type="text">            
+                </div>
 
-            <div class="form-group">
-                <label class="form-title" for="txt-pw">비밀번호</label>
-                <input id="txt-pw" type="password">           
-            </div>
+                <div class="form-group">
+                    <label class="form-title" for="txt-pw">비밀번호</label>
+                    <input id="txt-pw" placeholder="패스워드를 입력하세요" type="password">           
+                </div>
 
-            <div class="form-group">
-                <label class="form-title" for="txt-name">이름</label>
-                <input id="txt-name" type="text">            
-            </div>
+                <div class="form-group">
+                    <label class="form-title" for="txt-name">이름</label>
+                    <input id="txt-name" placeholder="이름을 입력하세요" type="text">            
+                </div>
 
-            <div class="form-group">
-                <label class="form-title">프로필사진</label>
-                <input id="txt-file" type="file">
+                <div class="form-group">
+                    <label class="form-title" for="txt-profile">프로필사진</label>
+                    <input id="txt-profile" type="file">
 
-            </div>
+                </div>
 
-            <div class="form-group">
-                <label class="form-title">주소</label>
-                <input id="txt-" type="text">
-                <button>우편번호찾기</button>
-            
-                <label class="form-title" for=></label>
-                <input id="txt-nnn" type="text">
-            </div>        
-            
-            <div class="form-group">
-                <label class="form-title">이동통신사</label>
-                <select>
-                    <option>선택해주세요</option>
-                    <option>SKT</option>
-                    <option>KT</option>
-                    <option>LGU+</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <span class="form-title">나이</span>
-
-                <label for="rdo-10">10대</label>
-                <input id="rdo-10" type="radio" name="age">
-
-                <label for="rdo-20">20대</label>
-                <input id="rdo-20" type="radio" name="age">
-
-                <label for="rdo-30">30대</label>
-                <input id="rdo-30" type="radio" name="age">
-
-                <label for="rdo-40">40대</label>
-                <input id="rdo-40" type="radio" name="age">
-
-                <label for="rdo-remain">기타</label>
-                <input id="rdo-remain" type="radio" name="age">
-
-            </div>
-
-            <div class="form-group">
-                <span class="form-title">혈액형</span>
-
-                <label for="rdo-A">A형</label>
-                <input id="rdo-A" type="radio" name="blood">
-
-                <label for="rdo-B">B형</label>
-                <input id="rdo-B" type="radio" name="blood">
-
-                <label for="rdo-O">O형</label>
-                <input id="rdo-O" type="radio" name="blood">
-
-                <label for="rdo-AB">AB형</label>
-                <input id="rdo-AB" type="radio" name="blood">
-
-            </div>
-
-            <div class="form-group">
-                <span class="form-title" class="form-text">취미</span>
-
-                <label for="chk-book">독서</label>
-                <input id="chk-book" type="checkbox">
-
-                <label for="chk-music">음악</label>
-                <input id="chk-music" type="checkbox">
-
-                <label for="chk-travel">여행</label>
-                <input id="chk-travel" type="checkbox">
-
-                <label for="chk-movie">영화</label>
-                <input id="chk-movie" type="checkbox">
-
-                <label for="chk-coding">코딩</label>
-                <input id="chk-coding" type="checkbox">
-
-                <label for="chk-remain">기타</label>
-                <input id="chk-remain" type="checkbox">
+                <div class="form-group">
+                    <div class="address3">
+                        <label class="form-title">주소</label>
+                    </div> 
+                    
+                    <div>
+                        <input type="text" value="주소벨류" id="address2">
+                        <button>우편번호찾기</button>
+                    
+                        <label class="form-title"></label>
+                        <input type="text" value="주소벨류" class="address">
+                    </div>        
+                </div>
+                <div class="form-group">
+                    <label class="form-title">이동통신사</label>
+                    <select>
+                        <option>선택해주세요</option>
+                        <option>SKT</option>
+                        <option>KT</option>
+                        <option>LGU+</option>
+                    </select>
+                </div>
                 
+                <div class="form-group">
+                    <span class="form-title">나이</span>
+
+                    <label for="rdo-10">10대</label>
+                    <input id="rdo-10" type="radio" name="age">
+
+                    <label for="rdo-20">20대</label>
+                    <input id="rdo-20" type="radio" name="age">
+
+                    <label for="rdo-30">30대</label>
+                    <input id="rdo-30" type="radio" name="age">
+
+                    <label for="rdo-40">40대</label>
+                    <input id="rdo-40" type="radio" name="age">
+
+                    <label for="rdo-remain">기타</label>
+                    <input id="rdo-remain" type="radio" name="age">
+
+                </div>
+
+                <div class="form-group">
+                    <span class="form-title">혈액형</span>
+
+                    <label for="rdo-A">A형</label>
+                    <input id="rdo-A" type="radio" name="blood">
+
+                    <label for="rdo-B">B형</label>
+                    <input id="rdo-B" type="radio" name="blood">
+
+                    <label for="rdo-O">O형</label>
+                    <input id="rdo-O" type="radio" name="blood">
+
+                    <label for="rdo-AB">AB형</label>
+                    <input id="rdo-AB" type="radio" name="blood">
+
+                </div>
+
+                <div class="form-group">
+                    <span class="form-title" class="form-text">취미</span>
+
+                    <label for="chk-book">독서</label>
+                    <input id="chk-book" type="checkbox">
+
+                    <label for="chk-music">음악</label>
+                    <input id="chk-music" type="checkbox">
+
+                    <label for="chk-travel">여행</label>
+                    <input id="chk-travel" type="checkbox">
+
+                    <label for="chk-movie">영화</label>
+                    <input id="chk-movie" type="checkbox">
+
+                    <label for="chk-coding">코딩</label>
+                    <input id="chk-coding" type="checkbox">
+
+                    <label for="chk-remain">기타</label>
+                    <input id="chk-remain" type="checkbox">
+                    
+                </div>
+
+                <div class="form-group">
+                    <div class="aboutme">
+                        <label class="form-title">자기소개</label>
+                    </div>
+                    <textarea id="txt-me"></textarea>
+                    
+                </div>
+
+                <div class="btn-area">
+                    <button class="btn">등록</button>
+                    <button class="btn">초기화</button>
+                </div>
             </div>
-
-            <div class="form-group">
-            <label class="form-title">자기소개</label>
-            <textarea id="txt-content"></textarea>
-
-            </div>
-
-            <button>등록</button>
-            <button>초기화</button>
         </div>
     </body>
 

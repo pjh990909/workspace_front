@@ -8,8 +8,14 @@ th, td, tr, textarea, button, form{
     padding: 0px;
 }
 
-.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
-.clearfix:after {clear: both;}
+.clearfix:before, .clearfix:after {
+    display: block; 
+    content: ""; 
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
 
  ol>li{
    list-style-type: none;

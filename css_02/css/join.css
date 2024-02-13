@@ -8,6 +8,35 @@ th, td, tr, textarea, button, form{
     padding: 0px;
 }
 
+.clearfix:before, .clearfix:after {
+    display: block; 
+    content: ""; 
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+
+ol {
+    margin-bottom: 10px;
+}
+ol, ul{
+    list-style: none;
+}
+
+ol>li {
+    margin: 0px;
+    float: left;
+}
+
+ol>li::after{
+    content: ">";
+}
+
+li:last-child:after {
+    content: "";
+}
+
 body{
     background-color: #808080;
     font-family: "맑은 고딕";
@@ -26,7 +55,6 @@ body{
 
 .remain .form-group{
     padding: 10px 0px 10px 0px;
-    margin-bottom: 10px;
     border-bottom: 1px solid #000000;
 }
 
@@ -37,10 +65,48 @@ body{
     text-align: center;
 }
 
-.remain .form-group input[type="radio"]{
+input, select, textarea {
+    font-size: 15px;
+}
+
+.remain .form-group input[type="radio"], input[type="checkbox"]{
     margin-right: 10px;
 }
 
-.remain .form-group input[type="checkbox"]{
-    margin-right: 10px;
+.btn-area {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+.btn {
+    width: 120px;
+    padding: 10px 0px 10px 0px;
+}
+
+.address{
+    width:350px;
+}
+
+#address2{
+    margin-bottom: 5px;
+}
+
+.address3{
+    height: 60px;
+    float: left;
+}
+
+#txt-me{
+    width: 400px;
+    height: 100px;
+    resize: none
+}
+
+.aboutme{
+    height: 5px;
+    float: left;
+}
+
+.new{
+    margin-bottom: 10px;
 }
