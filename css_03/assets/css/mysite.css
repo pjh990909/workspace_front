@@ -164,5 +164,39 @@ a:active{
 #contents2 #main{
     width: 816px;
     float: left;
+}
+/*위에 목록표시*/
+h3{
+    font-size: 20px;
+    float: left;
+    
+}
+li{
+    list-style-type: none;
+    
+}
+
+#search{
+    padding: 20px 0px 0px 0px;
     border-bottom: 1px solid #000000;
+}
+
+#search>ol{
+    float: right;
+    margin: 10px 0px 0px 0px;
+}
+
+#search>ol>li{
+    padding: 0px 5px 0px 0px;
+    float: left;
+  }
+
+#search>ol>li::after{
+    content: ">";
+    padding: 0px 0px 0px 5px;
+}
+
+#search>ol>li:last-child::after{
+    content: "";
+    padding: 0px 0px 0px 0px;
 }
