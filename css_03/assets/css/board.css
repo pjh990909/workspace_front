@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+h3{width: 661px;
+    font-size: 20px;
+    float: left;
+    margin: 10px 0px 3px 0px;
+}
+
+ol{
+    margin: 20px 0px 0px 3px;
+}
+
+ol>li{
+    padding: 0px 5px 0px 0px;
+    list-style-type: none;
+    float: left;
+  }
+
+  ol>li::after{
+    content: ">";
+    padding: 0px 0px 0px 5px;
+}
+
+ol>li:last-child::after{
+    content: "";
+}
