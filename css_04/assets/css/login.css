@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*회원가입*/
+#login{
+    width: 520px;
+    height: 221px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+}
+
+/*공용*/
+#login>div{
+    text-align: center;
+}
+
+.login-all{
+    margin-right: 25px;
+}
+/*아이디*/
+#login-id{
+    margin-top: 40px ;
+    margin-bottom: 20px;
+    margin-right: 65px;
+}
+
+
+/*패스워드*/
+#login-pw{
+    margin-right: 76px;
+}
+
+#login-pw{
+    margin-bottom: 40px;
+}
+/*로그인버튼*/
+#login-button{
+    margin: 0px 0px 25px 0px;
+}
+#loginbut{
+    padding: 6px 30px 6px 30px;
+}
+
+/*패스워드,이름공용*/
+#log-id,#log-pw{
+    width: 143px;
+    height: 28px;
+}

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*공용*/
+table{
+    width: 810px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+table>tbody>tr>td{
+    border: 1px solid #000000;
+}
+
+
+
+/*맨위 테이블*/
+#guest-log{
+    margin: 13px 0px 26px 0px;
+}
+
+#glog{
+    height: 248px;
+}
+
+button{ 
+    margin-left: 45%;
+}
+
+.idpw{
+    height: 40px;
+}
+.name1,.password1{
+    width: 70px;
+}
+
+input{
+    width: 325px;
+    height: 28px;
+    margin-left: 2px;
+}
+
+.but{
+    height: 42px;
+}
+
+button{
+    padding: 6px 36.5px 6px 36.5px;
+}
+
+textarea{
+    width: 801px;
+    height: 154px;
+    margin-left: 2px;
+}
+
+/*나머지테이블*/
+.nomal{
+    height: 74px;
+    margin-bottom: 10px;
+}
+
+#table .nomal td{
+    padding-left: 10px;
+}
+
+#table .nomal tr .nomal2,.nomal3{
+    width: 327px;
+}
