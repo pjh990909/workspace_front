@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#tit-registration{
+    margin: 20px 0px 10px 0px;
+}
+
+input{
+    width: 764px;
+    height: 28px;
+}
+
+textarea{
+    width: 810px;
+    height: 400px;
+}

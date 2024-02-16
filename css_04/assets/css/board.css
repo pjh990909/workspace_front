@@ -1,67 +1,44 @@
 @charset "UTF-8";
 
-/*검색*/
-#sel{
-    float: right;
-    margin: 20px 1px 2px 0px;
-}
-
-#txt-sel{
-    width: 140px;
-    padding: 5px 2px 1px 0px;
-}
-
-#txt-button{
-    padding: 2px 10px 2px 10px;
-    margin: 2px 5px 2px 2px;
-}
-/*게시판*/
-table{
-    width: 820px;
-    border: 1px solid #000000;
-    border-collapse: collapse;
-}
-
-table>thead>tr{
-    background-color: #dddddd;
-}
-
-table>thead>tr>th, table>tbody>tr>td{
-    border: 1px solid #000000;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    border-left: hidden;
-    border-right: hidden;
-}
-
-table>thead>tr>th{
-    font-weight: bold;
-}
-
-table>tbody>tr:hover{
-    background-color: #ffff00; 
-}
-
-.txt-left{text-align: left;}
-
-/*번호넘기기*/
-#num ol{
-    width: 41.5%;
-    margin: 0 auto;
-}
-
-#num ol>li{
+/*작성*/
+label{
     float: left;
-    margin: 0px 10px 0px 10px;
+    margin-right: 30px;
 }
 
-/*글쓰기 버튼*/
-
-#writing{
-    float: right;    
+#writer{
+    margin-top: 20px;
 }
 
-#wr-button{
-    margin: 10px 0px 10px 0px;
-    padding: 2px 6px 2px 6px;
+.mar-top{
+    margin-top: 10px;
+}
+
+#tit-litle{
+    margin-bottom: 15px;
+}
+
+#pad-left{
+    padding-left: 65px;
+}
+
+#write{
+    border-bottom: 1px solid #000000;
+}
+
+/*내용*/
+#detail{
+    padding: 10px 10px 10px 10px;
+    border-bottom: 1px solid #000000;
+}
+
+/*버튼*/
+#El-but{
+    float: right;
+}
+
+.El-button{
+    width: 70px;
+    height: 30px;
+    margin: 10px 0px 10px 7px;
 }
