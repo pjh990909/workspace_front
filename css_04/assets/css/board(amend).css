@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*작성*/
+label{
+    float: left;
+    margin-right: 30px;
+}
+
+#amend{
+    margin-top: 20px;
+}
+
+.mar2-top{
+    margin-top: 10px;
+}
+
+#tit-litle2{
+    margin-bottom: 15px;
+}
+
+#pad-left2{
+    padding-left: 65px;
+}
+
+
+/*내용*/
+#detail-amend{
+    width: 815px;
+    height: 400px;
+    border: 1px solid #000000;
+}
+
+.detail-two{
+    padding-left: 36px;
+}
+
+/*버튼*/
+#amend-but{
+    float: right;
+}
+
+.amend-button{
+    width: 70px;
+    height: 30px;
+    margin: 10px 0px 10px 7px;
+}

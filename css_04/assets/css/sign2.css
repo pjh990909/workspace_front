@@ -27,8 +27,8 @@
 
 #sufix-id>p{
     display: inline-block;
+    font-weight: bold;
 }
-
 /*패스워드*/
 #sufix-pw{
     margin-right: 73px;

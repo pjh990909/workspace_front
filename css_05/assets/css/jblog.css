@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*여백 초기화*/
+body, div, ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, input, 
+fieldset, legend, p, select, table, 
+th, td, tr, textarea, button, form{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix:before, .clearfix:after {
+    display: block; 
+    content: ""; 
+    line-height: 0;
+}
+.clearfix:after {
+    clear: both;
+}
+
+ul,ol{
+    list-style-type: none;
+}
+
+/*jblog공용*/
+body{
+    font-family: "맑은 고딕";
+}
+
+#j-main{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.jlog-but{
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    margin: 0px 2.5px 0px 2.5px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+}
+
+.jlog-but:active{
+    background-color: #EFEFEF;
+}
+
+#footer{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+}
+
+#footer ul>li{
+    float: left;
+    padding: 20px 20px;
+}
