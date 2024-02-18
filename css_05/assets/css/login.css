@@ -4,6 +4,46 @@
     width: 340px;
     height: 270px;
     margin: 37px auto 40px;
-    border: 1px solid #000000;
+    border: 1px solid #B7B7B7;
 }
 
+#login-idpw{
+    margin-top: 29px;
+    margin-bottom: 24px;
+    margin-right: 27px;
+}
+
+#logid{
+    margin-bottom: 10px;
+}
+
+#id-kor{
+    margin-right: 50px;
+}
+
+#pw-kor{
+    margin-right: 36px;
+}
+
+#login-id,#login-pw{
+    width: 163px;
+    height: 33px;
+}
+
+#idpw-warning{
+    width: 298px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000000;
+}
+
+#log-but{
+    margin-top: 10px;
+}
+
+#log-button{
+    width: 280px;
+    height: 42px;
+    border-radius: 9px;
+    border: 1px solid #979797;
+}
