@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+
+    </body>
+
+<script>
+    window.console.log("==================================");
+    let code = window.prompt("과목코드를 입력해주세요");
+    console.log(typeof code);
+    console.log(code);
+
+    no = Number.parseInt(code) //"1"==> 1
+
+    //case "1"은 string csae 1 은 number 깐깐하게 검사해서 위를 바꿔줘야함 
+    switch(no){
+        case 1:
+            console.log("R101호");
+            break;
+
+        case 2:
+            console.log("R202호");
+            break;
+
+        case 3:
+            console.log("R303호");
+            break;
+
+        case 4:
+            console.log("R404호");
+            break;
+        
+        default:
+            console.log("상담원");
+            break;
+    }
+
+
+
+</script>
+
+
+</html>

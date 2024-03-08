@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+    </body>
+<script>
+    let guestBookVo = {
+        name:"황일영",
+        password:"1234", 
+        content:"안녕하세요",
+        showInfo: function(){
+            console.log(this.name + ", " + this.password + ", " + this.content);
+        }
+    };
+    //데이타사용
+    console.log(guestBookVo.name);
+    console.log(guestBookVo.content);
+
+    guestBookVo.showInfo();
+    
+
+</script>
+
+
+</html>

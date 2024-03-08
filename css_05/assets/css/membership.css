@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+#membership-all{
+    width: 440px;
+    height: 330px;
+    margin: 40px auto;
+    border: 1px solid #B7B7B7;
+}
+
+#membership-idpw{
+    margin-top: 30px;
+    
+}
+
+#member-pw,#member-name,#id-Phrase{
+    margin-bottom: 9px;
+}
+
+#membership-id,#membership-pw,#membership-name{
+    width: 163px;
+    height: 33px;
+    margin-right: 2px;
+}
+
+#member-id{
+    margin-right: 16px;
+}
+
+#id-Phrase{
+    margin-left: 30px;
+}
+
+#member-pw{
+    margin-right: 123px;
+}
+
+#member-name{
+    margin-right: 120px;
+}
+
+#memidcheck{
+    width: 99px;
+    height: 31px;
+}
+
+#memid-kor{
+    margin-right: 49px;
+}
+
+#mempw-kor{
+    margin-right: 35px;
+}
+
+#memname-kor{
+    margin-right: 64px;
+}
+
+#memcheck{
+    margin-right: 23px;
+}
+
+#memcheck{
+   float: left;
+   margin-left: 20px;
+}
