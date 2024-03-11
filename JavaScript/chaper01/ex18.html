@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+
+    </body>
+<script>
+    //코어객체
+    //날짜
+    let date = new Date();
+    console.log(date);
+
+    let year = date.getFullYear();
+    let month = date.getMonth() + 1;
+    let day = date.getDate();
+    let hour = date.getHours();
+    let minute = date.getMinutes();
+    let secound = date.getSeconds();
+
+    console.log(year);
+    console.log(month);
+    console.log(day);
+    console.log(hour);
+    console.log(minute);
+    console.log(secound);
+
+    let date2 = new Date("2024-03-11");
+    console.log(date2);
+
+    console.log("========================================");
+    //문자열
+    let str = "Hello";
+    console.log(str.length);
+    console.log("Hello".length);
+
+    console.log("990101-1234567".charAt(7));
+
+    console.log("========================================");
+    //숫자
+    
+    //숫자1
+    let num01 = "100.34";
+    //let no = Number(num01); //문자열 -->숫자
+    let no = parseInt(num01); //문자열 -->정수
+
+    //숫자2
+    let num02 = 5;
+    
+    let sum = no + num02;
+    console.log(sum); //1005
+
+    //수학
+    let pi = Math.PI;
+    console.log(pi); //3.141592653589793
+
+    console.log(Math.abs(-123)); //절대값
+    console.log(Math.ceil(123.456)); //올림
+    console.log(Math.floor(123.456)); //내림
+    console.log(Math.round(123.456)); //반올림
+
+    console.log(Math.random()); //0<= 숫자 <1
+</script>
+
+
+
+</html>

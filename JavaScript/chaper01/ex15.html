@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>자바스크립트</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>자바스크립트</h1>
+    <h2>소제목</h2>
+</body>
+<script>
+    /*
+    let guestBookVo = {
+        name:"황일영",
+        password:"1234", 
+        content:"안녕하세요",
+        showInfo: function(){
+            console.log(this.name + ", " + this.password + ", " + this.content);
+        }
+    };
+    //데이타사용
+    console.log(guestBookVo.name);
+    console.log(guestBookVo.content);
+
+    guestBookVo.showInfo();
+    */
+    //객체정의
+    //이름,패스워드,내용
+    let no = 3;
+
+    let guestbookVo = {
+        name: "정우성",
+        pw: "1234",
+        content: "방문합니다.",
+        showInfo: function () {
+            console.log("#" + this.name + ", " + this.pw + ", " + this.content);
+        }
+    };
+
+    console.log(guestbookVo.name);
+    console.log(guestbookVo.pw);
+    console.log(guestbookVo.content);
+    console.log(guestbookVo);
+    guestbookVo.showInfo();
+
+    guestbookVo.name = "박명수";
+    guestbookVo.pw = "abcd";
+    console.log(guestbookVo);
+
+    guestbookVo.showInfo();
+    /////////////////////////////////////////////////////
+    //다른 표기법
+    console.log(guestbookVo["name"]);
+    console.log(guestbookVo["pw"]);
+    console.log(guestbookVo["content"]);
+    guestbookVo["showInfo"]();
+
+    console.log("========================================================");
+    /////////////////////////////////////////////////////
+    //객체정의 -생성 이후에 초기화(값을 나중에 넣어야 할때)
+    let guestVo = {};
+    guestVo.name = "이효리";
+    guestVo.pw = "1234";
+    guestVo.content = "이효리방문";
+    guestVo.showInfo = function () {
+        console.log("#" + this.name + ", " + this.pw + ", " + this.content);
+    };
+    guestVo.age = 12;
+    console.log(guestVo);
+    guestVo.showInfo();
+</script>
+
+
+</html>
