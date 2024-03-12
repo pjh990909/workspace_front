@@ -70,6 +70,27 @@
 </body>
 
 <script>
+document.addEventListener("DOMContentLoaded",function(){
+
+	//#p11 태그의 컨텐츠를 가져오세요
+	let p11Tag = document.querySelector("#p11");
+	//자바<strong>스트립트</strong>
+	console.log(p11Tag.textContent);
+	console.log(p11Tag.innerHTML);
+	//#p13태그에 텍스트를 "<strong>가나다라마바사아자차카타파하</strong>"
+	//textContent
+	let p13Tag = document.querySelector("#p13");
+	p13Tag.textContent = "<strong>가나다라마바사아자차카타파하</strong>";
+	//#p14태그에 텍스트를 "<strong>가나다라마바사아자차카타파하</strong>"
+	//innerHTML
+	let p14Tag = document.querySelector("#p14");
+	p14Tag.innerHTML = "<strong>가나다라마바사아자차카타파하</strong>";
+
+	//선택한 요소의 컨텐츠를 비우는데 사용
+	let p3Tag = document.querySelector("#p3");
+	p3Tag.element.textContet = "";
+});
+
 </script>
 
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--아이디-->
+	<ul id="ul">
+		<li> 첫번째 아이템입니다 </li>
+		<li> 두번째 아이템입니다 </li>
+		<li> 세번째 아이템입니다 </li>
+		<li> 네번째 아이템입니다 </li>
+		<li> 다섯번째 아이템입니다 </li>
+	</ul>
+
+	<button id="btn" type="button">앞에추가</button>
+	<button id="btn2" type="button">뒤에추가</button>
+
+</body>
+
+<script>
+	//돔트리 생성이 완료되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+
+
+		//앞에 추가 버튼을 클릭할때
+		let btn = document.querySelector("#btn");
+		btn.addEventListener("click", function () {
+			console.log("버튼클릭")
+
+			let ulTag = document.querySelector("#ul");
+
+
+			ulTag.insertAdjacentHTML("afterbegin", "<li>앞에 추가된 아이템입니다.</li>");
+
+		});
+		//뒤에 추가 버튼을 클릭할때
+		let btn2 = document.querySelector("#btn2");
+        btn2.addEventListener("click", function () {
+            console.log("버튼클릭")
+			
+			let ul01Tag = document.querySelector("#ul");
+            
+			ul01Tag.insertAdjacentHTML("beforeend","<li>뒤에 추가된 아이템입니다.</li>");
+        });
+	});
+
+</script>
+
+</html>

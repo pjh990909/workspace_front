@@ -23,7 +23,39 @@
 </body>
 
 <script>
+document.addEventListener("DOMContentLoaded",function(){
 
+    let btnPlus = document.querySelector("#btnPlus");
+    btnPlus.addEventListener("click",function(){
+        console.log("클릭");
+
+        let left = document.querySelector("#left");
+        let right = document.querySelector("#right");
+        let display = document.querySelector("#display");
+
+        let leftVal = Number(left.value);
+        let rightVal = Number(right.value);
+
+        console.log(leftVal);
+        console.log(rightVal);
+
+        console.log(typeof leftVal);
+        console.log(typeof rightVal);
+
+        let sum = leftVal+ rightVal;
+        console.log(sum);
+
+       
+        display.textContent = sum;
+
+        left.textContent = "";
+        right.value = "";
+
+
+    });
+
+
+});
 </script>
 
 </html>

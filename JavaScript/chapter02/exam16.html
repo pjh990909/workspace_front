@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!--아이디-->
+	<ul>
+		<li> 첫번째 아이템입니다 </li>
+		<li> 두번째 아이템입니다 </li>
+		<li> 세번째 아이템입니다 </li>
+		<li> 네번째 아이템입니다 </li>
+		<li> 다섯번째 아이템입니다 </li>
+		<li> 여섯번째 아이템입니다 </li>
+		<li> 일곱번째 아이템입니다 </li>
+		<li> 여덞번째 아이템입니다 </li>
+		<li> 아홉번째 아이템입니다 </li>
+		<li> 열번째 아이템입니다 </li>
+	</ul>
+
+</body>
+
+<script>
+	//돔트리 생성이 완료되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		let liTags = document.querySelectorAll("li");
+		console.log(liTags);
+
+		for (let i = 0; i < liTags.length; i++) {
+			liTags[i].addEventListener("click", function (event) {
+				console.log(i + "아이템 클릭");
+				//this --> 이벤트 리스너가 붙어 있는 그 요소
+				//event.target 🡪 사용자가 실제로 클릭한 그 요소
+
+				/*
+				this.remove();//삭제
+				this.textContent = "";//비우기
+				*/
+
+
+				//event.target
+				//event.target.remove();
+				event.target.texrContent="";
+
+			});
+		}
+
+
+	});
+
+</script>
+
+</html>

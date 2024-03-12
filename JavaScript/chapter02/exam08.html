@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link href="" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="" rel="stylesheet">
 
 </head>
 
@@ -16,7 +17,7 @@
 			<li id="guestbook">방명록</li>
 		</ul>
 	</div>
-	
+
 	<div id="content">
 		<p class="red">내용1입니다.</p>
 
@@ -53,6 +54,35 @@
 </body>
 
 <script>
+	document.addEventListener("DOMContentLoaded", function () {
+
+		let trs = document.querySelectorAll("tbody>tr");
+		console.log(trs);
+
+		let personList = [];
+
+		for (let i = 0; i < trs.length; i++) {
+			let name = trs[i].children[0].textContent
+			let hp = trs[i].children[1].textContent
+			let company = trs[i].children[2].textContent
+
+			let personVo = {
+				name: name,
+				hp: hp,
+				company: company
+			};
+
+			personList.push(personVo);
+			
+			
+		}
+		console.log(personList); //전체출력
+		console.log(personList[1].hp); //원하는거 출력(부분출력)
+
+	});
+
+
+
 </script>
 
 </html>
