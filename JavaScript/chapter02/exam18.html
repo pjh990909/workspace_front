@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link href="" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+	<form id="guestForm" action="/mysite6/guestbook/add" method="get">
+		<table border="1" width="540px">
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="name"></td>
+				
+				<td>비밀번호</td>
+				<td><input type="password" name="pw"></td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<textarea cols="72" rows="5" name="content"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<button id="btnWrite" type="submit">등록</button>
+				</td>
+			</tr>
+		</table>
+
+	</form>
+	<br>
+
+
+</body>
+
+<script>
+	//돔트리 생성이 완료되었을때
+	document.addEventListener("DOMContentLoaded", function () {
+
+		//
+		let guestForm = document.querySelector("#guestForm");
+		guestForm.addEventListener("submit",function(){
+			console.log("전송");
+			event.preventDefault();
+
+			let nameTag = document.querySelector('[name="name"]');
+			let name = nameTag.value.trim();
+			console.log(typeof name);
+
+			let pwTag = document.querySelector('[name="pw"]');
+			let pw = pwTag.value.trim();
+			console.log(typeof pw);
+
+			//이름 체크
+			if(name == ""){//이름을 입력하지 않으면 폼전송 하지말것
+				event.preventDefault();//폼기능 제한
+				window.alert("이름을 입력해주세요");//경고장
+				return false;//이벤트 전파를 막는다
+			}
+
+			//패시워드 체크
+			if(pw == ""){//이름을 입력하지 않으면 폼전송 하지말것
+				event.preventDefault();//폼기능 제한
+				window.alert("비밀번호을 입력해주세요");//경고장
+				return false;//이벤트 전파를 막는다
+			}
+
+			//서버로 데이터 전송
+			//return true;--> 보통 쓰지 않는다
+
+
+
+		});
+
+
+
+	});
+
+</script>
+
+</html>

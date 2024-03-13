@@ -2,155 +2,109 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>Insert title here</title>
-	<link href="./cal.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="./cal.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
 
-	<div id="cal">
-		<input id="display" type="text"><br>
+    <div id="cal">
+        <input id="display" type="text"><br>
 
-		<div id="btnArea">
-			<button id="btn9" type="button">9</button>
-			<button id="btn8" type="button">8</button>
-			<button id="btn7" type="button">7</button>
+        <div id="btnArea">
+            <button id="btn9" type="button">9</button>
+            <button id="btn8" type="button">8</button>
+            <button id="btn7" type="button">7</button>
 
-			<button id="btnDiv" type="button">/</button>
-			<br>
+            <button id="btnDiv" type="button">/</button>
+            <br>
 
-			<button id="btn6" type="button">6</button>
-			<button id="btn5" type="button">5</button>
-			<button id="btn4" type="button">4</button>
+            <button id="btn6" type="button">6</button>
+            <button id="btn5" type="button">5</button>
+            <button id="btn4" type="button">4</button>
 
-			<button id="btnMulti" type="button">*</button>
-			<br>
+            <button id="btnMulti" type="button">*</button>
+            <br>
 
-			<button id="btn3" type="button">3</button>
-			<button id="btn2" type="button">2</button>
-			<button id="btn1" type="button">1</button>
+            <button id="btn3" type="button">3</button>
+            <button id="btn2" type="button">2</button>
+            <button id="btn1" type="button">1</button>
 
-			<button id="btnPlus" type="button">+</button>
-			<br>
+            <button id="btnPlus" type="button">+</button>
+            <br>
 
-			<button id="btnClear" type="button">C</button>
-			<button id="btn0" type="button">0</button>
-			<button id="btnEqual" type="button">=</button>
-			<button id="btnMinus" type="button">-</button>
-			<br>
-		</div>
+            <button id="btnClear" type="button">C</button>
+            <button id="btn0" type="button">0</button>
+            <button id="btnEqual" type="button">=</button>
+            <button id="btnMinus" type="button">-</button>
+            <br>
+        </div>
 
 
-	</div>
+    </div>
 
 
 </body>
 
 <script>
-	document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
 
-		let btn0 = document.querySelector("#btn0");
-		btn0.addEventListener("click", function () {
-			console.log("0 버튼클릭")
+        let btnTags = document.querySelectorAll("button");
+        let display = document.querySelector("#display");
+        let expression = "";
 
-			let display = document.querySelector("#display");
-			console.log(display);
-			display.value += 0;
-			display.style.color = "#000000"
-		});
+        for (let i = 0; i < btnTags.length; i++) {
 
-		let btn1 = document.querySelector("#btn1");
-		btn1.addEventListener("click", function () {
-			console.log("1 버튼클릭")
+            btnTags[i].addEventListener("click", function () {
+                let btnValue = this.textContent;
+                //console.log(btnValue);
 
-			let display = document.querySelector("#display");
-			console.log(display);
-			display.value += 1;
-			display.style.color = "#000000"
-		});
+                if (btnValue === "=") {
+                    if (expression.includes("+")) {
+                        let cal = expression.split("+");
+                        let no1 = Number.parseInt(cal[0]);
+                        let no2 = Number.parseInt(cal[1]);
+                        console.log(no1 + no2);
+                        let result = no1 + no2;
+                        display.value = result;
+                    } else if (expression.includes("-")) {
+                        let cal = expression.split("-");
+                        let no1 = Number.parseInt(cal[0]);
+                        let no2 = Number.parseInt(cal[1]);
+                        console.log(no1 - no2);
+                        let result = no1 - no2;
+                        display.value = result;
+                    } else if (expression.includes("*")) {
+                        let cal = expression.split("*");
+                        let no1 = Number.parseInt(cal[0]);
+                        let no2 = Number.parseInt(cal[1]);
+                        console.log(no1 * no2);
+                        let result = no1 * no2;
+                        display.value = result;
+                    } else if (expression.includes("/")) {
+                        let cal = expression.split("/");
+                        let no1 = Number.parseInt(cal[0]);
+                        let no2 = Number.parseInt(cal[1]);
+                        console.log(no1 / no2);
+                        let result = no1 / no2;
+                        display.value = result;
+                    }
 
-		let btn2 = document.querySelector("#btn2");
-        btn2.addEventListener("click", function () {
-            console.log("2 버튼클릭")
+                } else if (btnValue === "C") {
+                    display.value = "";
+                    expression = "";
+                } else {
+                    expression += btnValue;
+                    display.value = expression;
+                }
 
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += 2;
-            display.style.color = "#000000"
-        });
+                console.log(expression);
+            });
+        };
 
-		let btn3 = document.querySelector("#btn3");
-        btn3.addEventListener("click", function () {
-            console.log("3 버튼클릭")
-
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += 3;
-            display.style.color = "#000000"
-        });
-
-		let btn4 = document.querySelector("#btn4");
-        btn4.addEventListener("click", function () {
-            console.log("4 버튼클릭")
-
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += 4;
-            display.style.color = "#000000"
-        });
-
-		let btn5 = document.querySelector("#btn5");
-        btn5.addEventListener("click", function () {
-            console.log("5 버튼클릭")
-
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += 5;			
-            display.style.color = "#000000"
-        });
-
-		let btn6 = document.querySelector("#btn6");
-        btn6.addEventListener("click", function () {
-            console.log("6 버튼클릭")
-
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += 6;
-            display.style.color = "#000000"
-        });
-
-		let btn7 = document.querySelector("#btn7");
-        btn7.addEventListener("click", function () {
-            console.log("7 버튼클릭")
-
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += "7";
-            display.style.color = "#000000"
-        });
-
-		let btn8 = document.querySelector("#btn8");
-        btn8.addEventListener("click", function () {
-            console.log("8 버튼클릭")
-
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += "8";
-            display.style.color = "#000000"
-        });
-
-		let btn9 = document.querySelector("#btn9");
-        btn9.addEventListener("click", function () {
-            console.log("9 버튼클릭")
-
-            let display = document.querySelector("#display");
-            console.log(display);
-            display.value += "9";
-            display.style.color = "#000000"
-        });
-	});
+    });
 
 
 </script>
